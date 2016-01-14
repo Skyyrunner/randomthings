@@ -1,0 +1,62 @@
+<meta name="viewport" content="width=400, initial-scale=1, user-scalable=no">
+
+<style>
+svg {
+    border: solid;
+}
+
+div.graph {
+    float:left;
+    width:40%;
+    margin:0;
+}
+
+div.hiddenAnswers {
+    display: none;
+}
+
+div.shownAnswers {
+    display: ;
+}
+
+#area1 {
+    border-width: 1 1 1 1;
+    margin-bottom: 5;
+}
+
+#area2 {
+    border-width: 1 1 1 1;
+}
+
+circle {
+    stroke: black;
+    stroke-width: 1;    
+}
+
+.left {
+    fill: gold;
+
+}
+
+.right {
+    fill: lightgreen;    
+}
+</style>
+
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.js" charset="utf-8"></script>
+<script src="webertest.js"></script>
+<!--<script src="webertest.js"></script>-->
+</head>
+
+<body>    
+    <form id="FORM" action="" method="GET">
+        <span title="1~10">Radius</span>: <input type="number" min="1" max="10" name="r" id="numf" value="4" size=2>
+        <input type="button" name="button" id="submit" value="Submit">
+    </form>
+    <div id="buttons"><button type="button" id="redraw">Redraw</button>    <button type="button" id="show">Show answers</button></div>
+    <div id="graph" class="graph"></div>
+    <div id="graph2" class="graph"></div>
+
+    <div id="answers" class="hiddenAnswers"></div>
+</body>

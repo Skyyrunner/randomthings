@@ -1,0 +1,34 @@
+<style>
+circle {
+    fill: gold;
+    stroke: black;
+    stroke-width: 4;    
+}
+
+path {
+    fill: none;
+    stroke-width: 4;
+}
+
+#graph {
+    height: 85%;
+    width: 100%;
+}
+</style>
+
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.js" charset="utf-8"></script>
+<script src="bezier.js"></script>
+</head>
+
+<body>
+    <p><strong>A page demonstrating a bezier curve-fitting algorithm by Skyrunner.</strong><br>
+        <form id=FORM" action="" method="GET">
+            <span title="3~26">Number of nodes</span>: <input type="number" min="3" max="26" name="num" id="numf" value="5" size=2><br>
+            Color: #<input type="text" name="color" size=8 value="0000FF">
+            <input type="button" name="button" id="submit" value="Submit">
+        </form>
+    </p>
+    <div id="graph"></div>
+    <p>(Graph resizes to fit window on clicking Submit.)</p>
+</body>

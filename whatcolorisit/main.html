@@ -1,0 +1,20 @@
+<head>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="main.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:800,400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div>
+        <p id="Time" class="centered" scale=12</p>
+        <div id="TextWrapper" class="centered">
+            <p id="Hexcode" scale=35.0></p>
+            <div id="HSL" scale=55.0>         
+                <p id="H" title="The color is directly determined by the time."></p>            
+                <p id="S" title="Saturation is directly determined by the minutes."></p>
+                <p id="L" title="Brightness is determined by inputting the seconds into a sin function which scales it up and down smoothly."></p>
+            </div>
+        </div>
+    </div>
+</body>

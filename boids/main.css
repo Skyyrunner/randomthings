@@ -1,0 +1,41 @@
+#screen {
+
+}
+
+.boid {
+    stroke:black;
+    stroke-width:0.7;
+}
+
+.slider {
+    width:20%;
+}
+
+#options {
+    position: absolute;
+    width:100%;
+    pointer-events: none;
+}
+
+#options>p {
+    width: 20%;
+}
+
+.d3-slider-handle {
+    pointer-events: visible;
+}
+
+input, button, .slider {
+    pointer-events: all;
+}
+
+.fishfood {
+    fill: red;
+    stroke: #291400;
+    stroke-width:0.5px;
+}
+
+#background {
+    fill: #000099;
+    fill-opacity: 20%;
+}

@@ -1,0 +1,32 @@
+p {
+    font-family:"open sans";
+    margin:0;
+    padding:0;
+}
+
+#Time {
+    font-size: 120px;
+    margin-top: 10%;
+}
+
+.centered {
+    text-align: center;
+}
+
+#HSL {
+    font-size: 12px;
+    display: none;
+}
+
+body {
+}
+
+#fill {
+    opacity: 0;
+}
+
+#Hexcode {
+    text-decoration: underline;
+    font-size: 30px;
+    cursor: pointer;
+}

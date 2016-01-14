@@ -1,0 +1,51 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.min.js" charset="utf-8"></script>
+    <script src="victor.js"></script>
+    <script src="d3.slider.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="d3.slider.css">
+    <title>Boidfish 4</title>
+</head>
+
+<body>
+    <button id="showOptions">Hide options</button>
+    <div id="options">
+        <p>Update frequency = <span id="text_update"></span>ms</p>
+        <div id="slider_update" class="slider"></span></div>
+        <p>Logic tick length = <span id="text_logic"></p>
+        <div id="slider_logic" class="slider"></span></div>
+        <p>Alignment radius = <span id="text_alignmentRadius"></span></p>
+        <div id="slider_alignmentRadius" class="slider"></div>
+        <p>Separation radius = <span id="text_separationRadius"></span></p>
+        <div id="slider_separationRadius" class="slider"></div>
+        <p>Separation magic number = <span id="text_separationMagic"></span></p>
+        <div id="slider_separationMagic" class="slider"></div>
+        <p>Cohesion radius = <span id="text_cohesionRadius"></span></p>
+        <div id="slider_cohesionRadius" class="slider"></div>
+        <p>Cohesion strength magic number = <span id="text_cohesionStrength"></span></p>
+        <div id="slider_cohesionStrength" class="slider"></div>
+        <p>Clamp speed: [<span id="text_speedclamp"></span>]
+        <div id="slider_speedclamp" class="slider"></div>
+        <button id="clamp">Apply clamp</button></p>
+        <p>Max acceleration = <span id="text_maxacc"></span></p>
+        <div id="slider_maxacc" class="slider"></div>
+        <p>Food detection radius = <span id="text_foodrad"></span></p>
+        <div id="slider_foodrad" class="slider"></div>
+        <p>Edge current strength = <span id="text_currstr"></span></p>
+        <div id="slider_currstr" class="slider"></div>
+        <p>Soft boundary strength = <span id="text_sftbndstr"></span></p>
+        <div id="slider_sftbndstr" class="slider"></div><br>
+        <p><input type="checkbox" id="softacc_check" name="check" value="true">Softly cap acceleration</p>
+        <p><input type="checkbox" id="softbound_check" name="check" value="true">Use soft boundaries</p>
+        <p><input type="checkbox" id="current_check" value="true">Edge current</p>
+    </div>
+    <div>        
+        <svg id="screen" scale=.9>
+            <g id="background"></g>
+            <g id="food"></g>
+            <g id="markers"></g>
+            <g id="boids"></g>
+        </svg>
+    </div>
+</body>
