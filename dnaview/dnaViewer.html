@@ -1,0 +1,33 @@
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.min.js" charset="utf-8"></script>
+	<script src="dnaViewer.js"></script>
+</head>
+
+<style>
+	img { 
+	    image-rendering: optimizeSpeed;             /*                     */
+	    image-rendering: -moz-crisp-edges;          /* Firefox             */
+	    image-rendering: -o-crisp-edges;            /* Opera               */
+	    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+	    image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+	    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+	    }
+    body{
+	 	color:#444;
+	 	background-color:#fafafa;
+	 	line-height:1.4;
+	 	font-size:18px
+	}
+</style>
+
+<body>
+	<div id="header"></div>
+	<div id="img">
+		<form id="form" action="" method="GET">
+			x:<input type="number" id="x" size='3'> length:<input type="number" id="L" size='2' value="50"><br>
+			y:<input type="number" id="y" size='3'><br>
+			<button type="button" id="submit">Lookup</button><br>
+			<textarea id="results" cols="50">Results appear here.</textarea>
+		</form>
+	</div>
+</body>
