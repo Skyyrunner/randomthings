@@ -1,0 +1,46 @@
+<meta charset="utf-8"> 
+
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.min.js" charset="utf-8"></script>
+<script src="rod.js"></script>
+<script src="rodsim.js"></script>
+</head>
+
+<style>
+.rod {
+    stroke: black;
+    stroke-width: 5;
+    fill: red;
+    marker-end: url(#endpoint);
+    marker-start: url(#endpoint);
+}
+
+.unit {
+    fill: black;
+    stroke-width: 4;
+}
+
+.vector {
+    stroke-width: 3;
+}
+
+.blueVect {
+    marker-end: url(#blueArrow);
+    stroke: blue;
+}
+
+.redVect {
+    marker-end: url(#redArrow);
+    stroke: red;
+}
+
+.blackVect {
+    marker-end: url(#blackArrow);
+    stroke:black;
+}
+</style>
+
+<body>
+    <br>    <br>    <br>    <br>    <br>
+    <div id="graphdiv"></div>
+</body>
